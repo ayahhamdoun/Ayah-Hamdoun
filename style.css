@@ -1,14 +1,18 @@
+
+html{
+    background-color: black;
+}
+
 body{
-    background-color: beige;
+    background-color: black;
 }
 h1{
-    color: green;
+    color: white;
     font-size: 2rem;
 }
 .container{
     font-family: 'Times New Roman', Times, serif;
-    margin: 2rem;
-    background-color: #d2b486;
+    background-color: black;
     border-radius: 2rem;
 }
 .text-center{text-align: center;}
@@ -18,4 +22,8 @@ img{
 }
 .navbar{ 
     list-style-type:none;
+}
+.story {
+    font-family: "georgia"
+
 }
