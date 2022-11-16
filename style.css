@@ -25,7 +25,7 @@ img{
 }
 .story {
     font-family: "Arial";
-    color: white;
-    
-
+    color: white !important;
 }
+
+
