@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-size: 100%;
+    font-family: sans-serif;
+}
+
+
+
+div, section, span, ul, li, a, header{
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+}
+header ul{
+    text-align: left;
+}
+header ul li{
+    list-style: none;
+    display: inline-block;
+}
+
+header ul li a{
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: all ease 0.5s;
+    position: relative;
+}
+
+header ul li a::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+    transition: width 0.3s;
+
+}
+
+header ul li a:hover::after{
+    width: 50%;
+
+}
+  
+header ul li a:hover{
+    background-color:rgb(232, 115, 66); 
+}
+#menu li{
+    list-style: none;
+    display: inline-block;
+    margin: 20px;
+}
+
+#menu li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+section{
+    width: 100%;
+    float: left;
+    height: 100vh;
+    position: relative;
+}
+
+#home{
+   background-color: #000000;
+}
+
+#about{
+     background-color: #282A3A;
+}
+
+#contact{
+     background-color: #735F32;
+}
+
+h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+
+.text-box{
+    color: #fff;
+    position: absolute;
+    bottom: 50%;
+    right: 50%;
+
+}
+
+.text-box p{
+    font-size: 50px;
+    font-weight: 500;
+    
+}
+.text-box h1{
+    font-size: 30px;
+    font-weight: 500;
+}
+.text-box h3{
+    font-size: 60px;
+    font-weight: 500;
+    color: transparent;
+    -webkit-text-stroke: 1px rgb(232, 115, 66);
+    background: url(back.png);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 20s linear infinite;
+}
+@keyframes back{
+    100%{
+        background-position: 2000px 0;
+
+    }
+}
+
+.img-ayah{
+    width: 50%;
+    position: absolute;
+    bottom: -200%;
+    right: -500px;
+}
+
+.text-box-about{
+    color: #fff;
+    position: absolute;
+    bottom: 50%;
+    right: 60%;
+
+}
+
+.text-box-about p{
+    font-size: 40px;
+    font-weight: 600;
+}
+.text-box-about h3{
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: .5px;
+}
